@@ -1,0 +1,44 @@
+@media (max-width:1500px) {
+    .organizations__content{
+        margin-left: 0;
+    }
+    .organizations__container{
+        flex-direction: column;
+    }
+    .organizations__content{
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .organizations__call--container,.organizations__pay{
+        text-align: center;
+    }
+    .organizations__call{
+        display: flex;
+        align-content: center;
+        justify-content: center;
+    }
+    .organizations__call--wrap{
+        flex-direction: column;
+    }
+    .organizations__call--title{
+        margin-top: 30px;
+    }
+    .organizations__title{
+    margin-top: 30px;
+    }
+    .organizations__title::after{
+        background-color: rgba(0, 0, 0, 0);
+    }
+}
+@media (max-width:530px) {
+    .organizations__logo{
+        width: 300px;
+        height: 500px;
+    }
+    .navigation__list{
+        width: 60%;
+    }
+}

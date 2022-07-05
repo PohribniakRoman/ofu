@@ -1,0 +1,111 @@
+.organizations{
+    min-height: 600px;
+    background-color: #F5F5F5;
+    &__container{
+        width: 90%;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__content{
+        margin-left:50px;
+    }
+    &__logo{
+        width: 500px;
+        height: 700px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    &__title{
+        margin-bottom: 20px;
+        font-weight: 700;
+        color: green;
+        font-size: 36px;
+        position: relative;
+        display: inline-block;
+        &::after{
+            content: '';
+            position: absolute;
+            width: 15px;
+            height: 2px;
+            background-color: green;
+            left: 100%;
+            bottom: 0;
+        }
+    }
+    &__description{
+        width: 60%;
+        line-height: 20px;
+        font-size: 16px;
+        font-weight: 400;
+        letter-spacing: 0.3px;
+    }
+    &__links{
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+        &--icon{
+            margin: 0 5px;
+            cursor: pointer;
+            color: rgba(0, 0, 0, 0);
+            font-size: 30px;
+            width: 36px;
+            line-height: 36px;
+            height: 36px;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+    }
+    &__call{
+        margin-top: 10px;
+        display: flex;
+        align-items: center;
+        &--wrap{
+            display: flex;
+            margin-top: 15px;
+        }
+        &--container{
+            margin-right: 30px;
+        }
+        &--title{
+            text-transform: uppercase;
+            margin-top: 10px;
+            font-weight: bold;
+            font-size: 16px;
+            letter-spacing:0.8px;
+        }
+        & i{
+            font-size: 16px;
+            color: green;
+            margin-right: 3px;
+        }
+        & span{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif !important;
+        }
+    }
+    &__pay{
+        margin-top: 20px;
+        &--title{
+            margin-bottom: 10px;
+            font-weight: 18px;
+            font-weight: bold;
+        }
+        & p{
+            margin-bottom: 10px;
+        }
+        & p i{
+            text-transform: uppercase;
+            font-weight: bold;
+            color: green;
+        }
+        & p span{
+            line-height: 20px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif !important;
+        }
+    }
+}
