@@ -42,3 +42,32 @@
         width: 60%;
     }
 }
+@media (max-width:950px) {
+    .banner__title{
+        font-size: 30px;
+    }
+    .banner__subtitle{
+        font-size: 12px;
+    }
+}
+@media (max-width:700px) {
+    .banner__title{
+        font-size: 20px;
+    }
+    .banner__subtitle{
+        font-size: 12px;
+    }
+}
+@media (max-width:550px) {
+    .banner__title{
+        font-size: 20px;
+        text-align: center;
+        line-height: 30px;
+        &::before,&::after{
+            // background-color: rgba(0, 0, 0, 0);
+        }
+    }
+    .banner__subtitle{
+        font-size: 12px;
+    }
+}
