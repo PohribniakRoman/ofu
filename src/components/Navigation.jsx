@@ -6,6 +6,23 @@ function ScrollToElement(elementId){
 
 export default function Navigation() {
     const [isOpen,toOpen] = useState(false)
+    window.addEventListener("scroll",()=>{
+        document.querySelectorAll(".navigation__list--item").forEach((element,index)=>{
+            element.classList.remove("active")
+            if(window.pageYOffset < 1340 && index === 0){
+                element.classList.add("active")
+            }
+            if(window.pageYOffset > 1340 && window.pageYOffset < 2228 && index === 1){
+                element.classList.add("active")
+            }
+            if(window.pageYOffset > 2228 && window.pageYOffset < 2900 && index === 2){
+                element.classList.add("active")
+            }
+            if(window.pageYOffset > 2900 && window.pageYOffset < 3628 && index === 3){
+                element.classList.add("active")
+            }
+        })
+    })
   return (
     <>
       <div className={isOpen?"navigation__modal":"navigation__modal hidden"}>
@@ -23,6 +40,18 @@ export default function Navigation() {
             }}>
                 КЦВО
             </li>
+            <li  className={isOpen?"navigation__modal--menu-item":"navigation__modal--menu-item hidden"} onClick={() => {
+                toOpen(!isOpen)
+                ScrollToElement("#ult");
+            }}>
+                Ультрас
+            </li>
+            <li  className={isOpen?"navigation__modal--menu-item":"navigation__modal--menu-item hidden"} onClick={() => {
+                toOpen(!isOpen)
+                ScrollToElement("#go");
+            }}>
+                ГО Культура
+            </li>
         </ul>
       </div>
       <section className="navigation">
@@ -36,6 +65,12 @@ export default function Navigation() {
             <div className="navigation__list--item active" onClick={() => {
                 ScrollToElement("#kcvo")
             }}>КЦВО</div>
+            <div className="navigation__list--item active" onClick={() => {
+                ScrollToElement("#ult")
+            }}>Ультрас</div>
+            <div className="navigation__list--item active" onClick={() => {
+                ScrollToElement("#go")
+            }}>ГО Культура</div>
           </div>
         </div>
       </section>

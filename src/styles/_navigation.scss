@@ -44,18 +44,29 @@
       align-items: center;
       justify-content: center;
       flex-direction: column;
-      &-item{
+      &-item {
         text-align: center;
         color: gray;
         letter-spacing: 3px;
         padding: 25px 100px;
         font-size: 20px;
         cursor: pointer;
-        transition: .3s;
-      &:not(:last-child) {
-        border-bottom: 1px solid #008c3e;
+        transition: 0.3s;
+        position: relative;
+        &:not(:last-child) {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          &::before {
+            content: "";
+            bottom: 0;
+            position: absolute;
+            width: 300px;
+            height: 1px;
+            background-color: #008c3e;
+          }
+        }
       }
-    }
     }
   }
   &__toggle {
