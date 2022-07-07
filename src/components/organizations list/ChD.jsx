@@ -7,7 +7,7 @@ export default function ChD(){
     return  <section className="organizations__container" id="chd">
     <div className="organizations__logo" style={{backgroundImage:`url(${ChD_logo})`}}></div>
       <div className="organizations__content">
-        <h1 className="organizations__title">ГО Культура</h1>
+        <h1 className="organizations__title">Час Добра</h1>
         <p className="organizations__description">
         Діяльність ВЦ "Час Добра" є унікальною і всеохоплюючою. За кожною групою волонтерів нашого центру закріплений окремий напрямок.
         </p>
