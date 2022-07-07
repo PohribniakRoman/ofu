@@ -43,6 +43,10 @@
     }
 }
 @media (max-width:950px) {
+    .footer__img--cont{
+        width: 640px;
+        height: 360px;
+    }
     .navigation__list{
         justify-content: flex-end;
     }
@@ -60,6 +64,11 @@
     }
 }
 @media (max-width:700px) {
+    .footer__img--cont{
+        width: 400px;
+        height: 360px;
+        background-size: cover;
+    }
     .banner__title{
         font-size: 20px;
     }
@@ -68,6 +77,10 @@
     }
 }
 @media (max-width:550px) {
+    .organizations__logo{
+        min-width: 320px;
+        height: 500px;
+    }
     .banner__title{
         font-size: 20px;
         text-align: center;

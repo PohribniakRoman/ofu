@@ -62,6 +62,7 @@
             bottom: 0;
             position: absolute;
             width: 300px;
+            opacity: 1;
             height: 1px;
             background-color: #008c3e;
           }
@@ -111,7 +112,7 @@
   &__list {
     display: flex;
     justify-content: space-around;
-    width: 40%;
+    width: 60%;
     &--item {
       font-size: 11px;
       color: #222;
@@ -133,6 +134,6 @@
   z-index: -1;
   &::before,
   &::after {
-    background-color: rgba($color: #ffffff, $alpha: 0);
+    background-color: rgba($color: #ffffff, $alpha: 0) !important;
   }
 }

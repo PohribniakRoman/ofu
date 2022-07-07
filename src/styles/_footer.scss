@@ -1,21 +1,22 @@
 .footer {
-    background-color: #fff;
-    z-index: 10000;
-    &__img {
+  background-color: #fff;
+  z-index: 10000;
+  &__img {
     height: 65vh;
     margin: 30px;
+    min-height: 500px;
     display: flex;
     align-items: center;
     justify-content: center;
-    &--cont{
-        width: 834px;
-        height: 469px;
-        background-image: url(../images/ofu.png);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: contain;
-        -webkit-box-shadow: 0px 0px 35px 3px rgba(0, 0, 0, 0.58);
-        box-shadow: 0px 0px 35px 3px rgba(0, 0, 0, 0.58);
+    &--cont {
+      width: 834px;
+      height: 469px;
+      background-image: url(../images/ofu.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      -webkit-box-shadow: 0px 0px 35px 3px rgba(0, 0, 0, 0.58);
+      box-shadow: 0px 0px 35px 3px rgba(0, 0, 0, 0.58);
     }
   }
   &__bar {

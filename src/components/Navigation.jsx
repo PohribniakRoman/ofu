@@ -21,6 +21,9 @@ export default function Navigation() {
             if(window.pageYOffset > 2900 && window.pageYOffset < 3628 && index === 3){
                 element.classList.add("active")
             }
+            if(window.pageYOffset > 3628 && window.pageYOffset < 4300 && index === 4){
+                element.classList.add("active")
+            }
         })
     })
   return (
@@ -52,6 +55,12 @@ export default function Navigation() {
             }}>
                 ГО Культура
             </li>
+            <li  className={isOpen?"navigation__modal--menu-item":"navigation__modal--menu-item hidden"} onClick={() => {
+                toOpen(!isOpen)
+                ScrollToElement("#chd");
+            }}>
+                Час Добра
+            </li>
         </ul>
       </div>
       <section className="navigation">
@@ -71,6 +80,9 @@ export default function Navigation() {
             <div className="navigation__list--item active" onClick={() => {
                 ScrollToElement("#go")
             }}>ГО Культура</div>
+            <div className="navigation__list--item active" onClick={() => {
+                ScrollToElement("#chd")
+            }}>Час Добра</div>
           </div>
         </div>
       </section>
