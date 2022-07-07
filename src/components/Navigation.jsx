@@ -1,15 +1,44 @@
+import { useState } from "react";
+
+function ScrollToElement(elementId){
+    document.querySelector(elementId).scrollIntoView({ behavior: "smooth", block: "center" });
+}
+
 export default function Navigation() {
-    return <section className="navigation">
+    const [isOpen,toOpen] = useState(false)
+  return (
+    <>
+      <div className={isOpen?"navigation__modal":"navigation__modal hidden"}>
+        <div className={isOpen?"navigation__modal--toggle":"navigation__modal--toggle hidden"} onClick={()=>{toOpen(!isOpen)}}></div>
+        <ul className={isOpen?"navigation__modal--menu":"navigation__modal--menu hidden"}>
+            <li className={isOpen?"navigation__modal--menu-item":"navigation__modal--menu-item hidden"} onClick={() => {
+                toOpen(!isOpen)
+                ScrollToElement("#ev");
+            }}>
+                Єдина Воля
+            </li>
+            <li  className={isOpen?"navigation__modal--menu-item":"navigation__modal--menu-item hidden"} onClick={() => {
+                toOpen(!isOpen)
+                ScrollToElement("#kcvo");
+            }}>
+                КЦВО
+            </li>
+        </ul>
+      </div>
+      <section className="navigation">
         <div className="navigation__container">
-            <div className="navigation__logo">ОДУ</div>
-            <div className="navigation__list">
-                <div className="navigation__list--item active" onClick={()=>{
-                    document.querySelector("#ev").scrollIntoView({behavior:"smooth",block:"center"})
-                }}>Єдина Воля</div>
-                <div className="navigation__list--item active" onClick={()=>{
-                    document.querySelector("#kcvo").scrollIntoView({behavior:"smooth",block:"center"})
-                }}>КЦВО</div>
-            </div>
+          <div className="navigation__logo">ОДУ</div>
+          <div className="navigation__list">
+          <div className="navigation__toggle" onClick={()=>{toOpen(!isOpen)}}><span></span></div>
+            <div className="navigation__list--item active" onClick={() => {
+                ScrollToElement("#ev")
+            }}>Єдина Воля</div>
+            <div className="navigation__list--item active" onClick={() => {
+                ScrollToElement("#kcvo")
+            }}>КЦВО</div>
+          </div>
         </div>
-    </section>
+      </section>
+    </>
+  );
 }

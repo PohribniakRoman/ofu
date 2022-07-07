@@ -69,6 +69,7 @@
       margin-top: 15px;
     }
     &--container {
+      cursor: pointer;
       margin-right: 30px;
     }
     &--title {
@@ -77,19 +78,22 @@
       font-weight: bold;
       font-size: 16px;
       letter-spacing: 0.8px;
+      color: gray;
     }
     & i {
-      font-size: 16px;
-      color: green;
+      font-size: 12px;
+      color: gray;
       margin-right: 3px;
     }
     & span {
+      font-style: italic;
       font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif !important;
     }
   }
   &__pay {
     position: relative;
     margin-top: 20px;
+    color: gray;
     &--title {
       margin-bottom: 10px;
       font-weight: 18px;
@@ -99,14 +103,18 @@
       position: absolute;
       cursor: pointer;
       left: -5px;
-      transition: .3s;
+      transition: 0.3s;
     }
     &--info {
       margin-left: 15px;
       margin-bottom: 10px;
       overflow: hidden;
-      height: 20px;
-      transition: .3s;
+      height: 15px;
+      transition: 0.3s;
+      & div{
+        color: rgba(0, 0, 0, 0);
+        transition: .3s;
+      }
     }
     &--bold {
       text-transform: uppercase;
@@ -114,14 +122,23 @@
       color: green;
     }
     &--bankAccount {
+      color: rgba(0, 0, 0, 0);
       line-height: 20px;
+      transition: .3s;
       font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif !important;
     }
     & .visible {
-        height: 60px;
-        & svg{
-            transform: rotate(90deg);
-        }
+      height: 60px;
+      color: gray;
+      & svg {
+        transform: rotate(90deg);
       }
+      & span{
+        color: #000;
+      }
+      & div{
+        color: gray;
+      }
+    }
   }
 }

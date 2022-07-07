@@ -19,10 +19,7 @@ export default function Organizations() {
           <p className="organizations__description">
             Благодійна організація «Благодійний фонд «Єдина Воля»
           </p>
-          <p className="organizations__call">
-            <i><BsFillTelephoneFill/></i>
-            <span>+380 666 258 609</span>
-          </p>
+          <Call numb={"+380 666 258 609"}/>
           <div className="organizations__links">
             <SocialLink link={"https://send.monobank.ua/6dozXvnLNo"} icon={"https://miro.medium.com/max/3150/1*PxKUZIus4lJELdfYKYJuyA.png"}/>
             <SocialLink link={"https://www.facebook.com/Volunteers-VOLYA-110138914973522"} icon={"https://icons-for-free.com/download-icon-facebook+logo+logo+website+icon-1320190502625926346_256.ico"}/>

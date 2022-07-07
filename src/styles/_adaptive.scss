@@ -43,6 +43,15 @@
     }
 }
 @media (max-width:950px) {
+    .navigation__list{
+        justify-content: flex-end;
+    }
+    .navigation__toggle{
+        display: flex;
+    }
+    .navigation__list--item {
+        display: none;
+    }
     .banner__title{
         font-size: 30px;
     }
@@ -63,9 +72,6 @@
         font-size: 20px;
         text-align: center;
         line-height: 30px;
-        &::before,&::after{
-            // background-color: rgba(0, 0, 0, 0);
-        }
     }
     .banner__subtitle{
         font-size: 12px;
