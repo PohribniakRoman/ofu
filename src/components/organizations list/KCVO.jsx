@@ -1,11 +1,11 @@
 import SocialLink from "../SocialLink";
 import BankAccount from "../BankAccount";
 import Call from "../Call";
-import KCVO_logo from "../../images/KCVO.jpg"
+import kcvo_logo from "../../images/kcvo_logo.jpg"
 
-export default function KCVO(){
+export default function Kcvo(){
     return  <div className="organizations__container" id="kcvo">
-    <div className="organizations__logo" style={{backgroundImage:`url(${KCVO_logo})`}}></div>
+    <div className="organizations__logo" style={{backgroundImage:`url(${kcvo_logo})`}}></div>
     <div className="organizations__content">
       <h1 className="organizations__title">Координаційний центр волонтерів</h1>
       <p className="organizations__description">

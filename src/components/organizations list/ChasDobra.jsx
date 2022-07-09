@@ -1,11 +1,11 @@
-import ChD_logo from "../../images/ChD.jpg"
+import chas_dobra_logo from "../../images/chas_dobra_logo.jpg"
 import Call from "../Call";
 import SocialLink from "../SocialLink";
 
 
-export default function ChD(){
+export default function ChasDobra(){
     return  <section className="organizations__container" id="chd">
-    <div className="organizations__logo" style={{backgroundImage:`url(${ChD_logo})`}}></div>
+    <div className="organizations__logo" style={{backgroundImage:`url(${chas_dobra_logo})`}}></div>
       <div className="organizations__content">
         <h1 className="organizations__title">Час Добра</h1>
         <p className="organizations__description">

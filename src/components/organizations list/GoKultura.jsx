@@ -1,10 +1,10 @@
-import GO_logo from "../../images/GO.jpg"
+import go_kultura_logo from "../../images/go_kultura_logo.jpg"
 import SocialLink from "../SocialLink";
 
-export default function Ult() {
+export default function GoKultura() {
   return (
     <section className="organizations__container" id="go">
-    <div className="organizations__logo" style={{backgroundImage:`url(${GO_logo})`}}></div>
+    <div className="organizations__logo" style={{backgroundImage:`url(${go_kultura_logo})`}}></div>
       <div className="organizations__content">
         <h1 className="organizations__title">ГО Культура</h1>
         <p className="organizations__description">

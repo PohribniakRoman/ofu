@@ -1,17 +1,21 @@
-import EV from "./organizations list/EV";
-import KCVO from "./organizations list/KCVO";
-import Ult from "./organizations list/Ult";
-import GO from "./organizations list/GO";
-import ChD from "./organizations list/ChD";
+import EdunaVolya from "./organizations list/EdunaVolya";
+import Kcvo from "./organizations list/Kcvo";
+import Ultras from "./organizations list/Ultras";
+import GoKultura from "./organizations list/GoKultura";
+import ChasDobra from "./organizations list/ChasDobra";
+import NovaHvulya from "./organizations list/NovaHvula";
+import Yvs from "./organizations list/Yvs";
 
 export default function Organizations() {
   return (
     <section className="organizations" id="org">
-        <EV/>
-        <KCVO/>
-        <Ult/>
-        <GO/>
-        <ChD/>
+        <EdunaVolya/>
+        <Kcvo/>
+        <Ultras/>
+        <GoKultura/>
+        <ChasDobra/>
+        <NovaHvulya/>
+        <Yvs/>
     </section>
   );
 }

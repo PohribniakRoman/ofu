@@ -1,10 +1,10 @@
-import Ult_logo from "../../images/Ult.jpg"
+import ultras_logo from "../../images/ultras_logo.jpg"
 import SocialLink from "../SocialLink";
 
-export default function Ult() {
+export default function Ultras() {
   return (
     <section className="organizations__container" id="ult">
-    <div className="organizations__logo" style={{backgroundImage:`url(${Ult_logo})`}}></div>
+    <div className="organizations__logo" style={{backgroundImage:`url(${ultras_logo})`}}></div>
       <div className="organizations__content">
         <h1 className="organizations__title">Ультрас</h1>
         <p className="organizations__description">

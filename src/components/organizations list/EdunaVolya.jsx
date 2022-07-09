@@ -1,12 +1,12 @@
 import SocialLink from "../SocialLink";
 import Call from "../Call";
 import Post from "../Post"
-import EV_logo from "../../images/EV.jpg"
+import eduna_volya_logo from "../../images/eduna_volya_logo.jpg"
 
 
-export default function EV(){
+export default function EdunaVolya(){
     return <div className="organizations__container" id="ev">
-    <div className="organizations__logo"style={{ backgroundImage:`url(${EV_logo})`,}}></div>
+    <div className="organizations__logo"style={{ backgroundImage:`url(${eduna_volya_logo})`,}}></div>
     <div className="organizations__content">
       <h1 className="organizations__title">Єдина Воля</h1>
       <p className="organizations__description">

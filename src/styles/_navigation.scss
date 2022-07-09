@@ -23,6 +23,7 @@
       cursor: pointer;
       &::before,
       &::after {
+        cursor: pointer;
         content: "";
         position: absolute;
         width: 20px;
@@ -114,7 +115,7 @@
     justify-content: space-around;
     width: 60%;
     &--item {
-      font-size: 11px;
+      font-size: 12px;
       color: #222;
       font-weight: bold;
       text-transform: uppercase;

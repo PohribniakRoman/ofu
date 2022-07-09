@@ -1,4 +1,10 @@
 @media (max-width:1500px) {
+    .footer__img--title{
+        font-size: 24px;
+    }
+    .footer__img--descr{
+        width: 70%;
+    }
     .organizations__content{
         margin-left: 0;
     }
@@ -33,6 +39,30 @@
         background-color: rgba(0, 0, 0, 0);
     }
 }
+@media (max-width:840px) {
+    .footer__img{
+        flex-direction: column;
+    }
+    .footer__img--title::after{
+        background-color: rgba(0, 0, 0, 0);
+    }
+    .footer__img--cont{
+        width: 100%;
+    }
+    .footer__img--info{
+        margin: 0;
+        text-align: center;
+        width: 70%;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .footer__img--descr{
+        width: 100%;
+    }
+    .organizations__links{
+        justify-content: center;
+    }
+}
 @media (max-width:530px) {
     .organizations__logo{
         width: 300px;
@@ -42,10 +72,9 @@
         width: 60%;
     }
 }
-@media (max-width:950px) {
-    .footer__img--cont{
-        width: 640px;
-        height: 360px;
+@media (max-width:1920px) {
+    .footer__img{
+        width: 70%;
     }
     .navigation__list{
         justify-content: flex-end;
@@ -64,10 +93,11 @@
     }
 }
 @media (max-width:700px) {
-    .footer__img--cont{
-        width: 400px;
-        height: 360px;
-        background-size: cover;
+    .organizations__title {
+        font-size: 24px;
+    }
+    .organizations__description {
+        font-size: 14px;
     }
     .banner__title{
         font-size: 20px;
