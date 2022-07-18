@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "./static/css/main.e6d50d32.css",
+    "main.js": "./static/js/main.b1647614.js",
+    "static/media/ultras_logo.jpg": "./static/media/ultras_logo.97e5d80e3be151898489.jpg",
+    "static/media/nova_hvulya_logo.jpg": "./static/media/nova_hvulya_logo.ed6695b843eec5680f31.jpg",
+    "static/media/chas_dobra_logo_adaptive.jpg": "./static/media/chas_dobra_logo_adaptive.04f369191076a81f8604.jpg",
+    "static/media/chas_dobra_logo.jpg": "./static/media/chas_dobra_logo.c132d0c8bb6759fb6e42.jpg",
+    "static/media/nova_hvulya_logo_adaptive.jpg": "./static/media/nova_hvulya_logo_adaptive.444f773042664567963c.jpg",
+    "static/media/kcvo_logo.jpg": "./static/media/kcvo_logo.5c686e41549d279145e7.jpg",
+    "static/media/eduna_volya_logo.jpg": "./static/media/eduna_volya_logo.2f07163df9b87924dac5.jpg",
+    "static/media/yvs_logo_adaptive.jpg": "./static/media/yvs_logo_adaptive.d4024ed7aaa77f61f67b.jpg",
+    "static/media/yvs_logo.jpg": "./static/media/yvs_logo.1af21ce7569253f67eb9.jpg",
+    "static/media/go_kultura_logo.jpg": "./static/media/go_kultura_logo.9f361b9fcb02735a39f2.jpg",
+    "static/media/Parlament_logo.png": "./static/media/Parlament_logo.f35733ca1441115f8d53.png",
+    "static/media/ultras_logo_adaptive.jpg": "./static/media/ultras_logo_adaptive.70ba8b7b472d790657d3.jpg",
+    "static/media/eduna_volya_logo_adaptive.jpg": "./static/media/eduna_volya_logo_adaptive.4d0f74a272505091faf5.jpg",
+    "static/media/kcvo_logo_adaptive.jpg": "./static/media/kcvo_logo_adaptive.c66fdbf6afd0fab01db4.jpg",
+    "static/media/go_kultura_logo_adaptive.jpg": "./static/media/go_kultura_logo_adaptive.331cee18047630d40a97.jpg",
+    "index.html": "./index.html",
+    "main.e6d50d32.css.map": "./static/css/main.e6d50d32.css.map",
+    "main.b1647614.js.map": "./static/js/main.b1647614.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6d50d32.css",
+    "static/js/main.b1647614.js"
+  ]
+}
