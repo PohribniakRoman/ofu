@@ -53,6 +53,12 @@ export default function Navigation() {
             }}>
                 УВС
             </li>
+            <li  className={isOpen?"navigation__modal--menu-item":"navigation__modal--menu-item hidden"} onClick={() => {
+                toOpen(!isOpen)
+                ScrollToElement("#parl");
+            }}>
+                Молодіжний парламент
+            </li>
         </ul>
       </div>
       <section className="navigation">
@@ -84,6 +90,9 @@ export default function Navigation() {
             <div className="navigation__list--item active" onClick={() => {
                 ScrollToElement("#yvs")
             }}>УВС</div>
+            <div className="navigation__list--item active" onClick={() => {
+                ScrollToElement("#parl")
+            }}>Молодіжний парламент</div>
           </div>
         </div>
       </section>
