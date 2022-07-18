@@ -42,10 +42,30 @@
 @media (max-width:840px) {
     .organizations__logo{
         border-radius: 50%;
-        width: 400px;
-        height: 400px;
+        min-width: 400px;
+        min-height: 400px;
     }
-
+    .organizations .organizations__container:nth-child(1) .organizations__logo{
+        background-image: url(../images/eduna_volya_logo_adaptive.jpg) !important;
+    }
+    .organizations .organizations__container:nth-child(2) .container__logo{
+        background-image: url(../images/kcvo_logo_adaptive.jpg) !important;
+    }
+    .organizations .organizations__container:nth-child(3) .organizations__logo{
+        background-image: url(../images/ultras_logo_adaptive.jpg) !important;
+    }
+    .organizations .organizations__container:nth-child(4) .organizations__logo{
+        background-image: url(../images/go_kultura_logo_adaptive.jpg) !important;
+    }
+    .organizations .organizations__container:nth-child(5) .organizations__logo{
+        background-image: url(../images/chas_dobra_logo_adaptive.jpg) !important;
+    }
+    .organizations .organizations__container:nth-child(6) .organizations__logo{
+        background-image: url(../images/nova_hvulya_logo_adaptive.jpg)!important;
+    }
+    .organizations .organizations__container:nth-child(7) .organizations__logo{
+        background-image: url(../images/yvs_logo_adaptive.jpg ) !important;
+    }
     .footer__img{
         flex-direction: column;
     }
@@ -110,8 +130,8 @@
 }
 @media (max-width:550px) {
     .organizations__logo{
-        width: 300px;
-        height: 300px;
+        min-width: 300px;
+        min-height: 300px;
     }
     .banner__title{
         font-size: 20px;
